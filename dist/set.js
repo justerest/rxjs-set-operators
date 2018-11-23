@@ -12,10 +12,10 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var operators_1 = require("rxjs/operators");
-function set(key, fn) {
-    return operators_1.map(function (data) {
+function set(key, project) {
+    return operators_1.map(function (value) {
         var _a;
-        return (__assign({}, data, (_a = {}, _a[key] = fn(data), _a)));
+        return (__assign({}, value, (_a = {}, _a[key] = project(value), _a)));
     });
 }
 exports.set = set;

@@ -4,7 +4,7 @@
   "description": "RxJs pipeable operators for object stream",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -R ./dist & tsc -p .",
+    "build": "rm -R ./dist && tsc -p .",
     "build:commit": "npm run build && git add ./dist",
     "start": "node dist/index.js",
     "start:dev": "npm run build && npm start",

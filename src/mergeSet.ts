@@ -1,7 +1,7 @@
 import { from, ObservableInput, OperatorFunction } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
 
-export function mergeSet<T, R, K extends string | symbol>(key: K, fn: (a1: T) => ObservableInput<R>): OperatorFunction<T, { [P in keyof (T & { [F in K]: R; })]: (T & { [F in K]: R; })[P]; }>;
-export function mergeSet(key: string, fn?: any) {
-    return mergeMap((data: any) => from(fn(data)).pipe(map((response) => ({ ...data, [key]: response }))));
+export function mergeSet<T, R, K extends string | symbol>(key: K, project: (value: T, index: number) => ObservableInput<R>): OperatorFunction<T, { [P in keyof (T & { [F in K]: R; })]: (T & { [F in K]: R; })[P]; }>;
+export function mergeSet(key: string, project?: any) {
+    return mergeMap((outerValue: any) => from(project(outerValue)).pipe(map((innerValue) => ({ ...outerValue, [key]: innerValue }))));
 }

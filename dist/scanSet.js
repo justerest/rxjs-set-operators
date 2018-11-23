@@ -12,11 +12,11 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var operators_1 = require("rxjs/operators");
-function scanSet(key, fn, seed) {
+function scanSet(key, accumulator, seed) {
     var _a;
-    return operators_1.scan(function (res, data) {
+    return operators_1.scan(function (acc, value) {
         var _a;
-        return (__assign({}, data, (_a = {}, _a[key] = fn(res[key], data), _a)));
+        return (__assign({}, value, (_a = {}, _a[key] = accumulator(acc[key], value), _a)));
     }, (_a = {}, _a[key] = seed, _a));
 }
 exports.scanSet = scanSet;
