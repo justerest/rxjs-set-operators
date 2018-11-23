@@ -2,6 +2,7 @@
   "name": "rxjs-set-operators",
   "version": "0.1.0",
   "description": "RxJs pipeable operators for object stream",
+  "private": false,
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -R ./dist && tsc -p .",
