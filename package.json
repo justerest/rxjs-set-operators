@@ -1,0 +1,41 @@
+{
+  "name": "rxjs-set-operators",
+  "version": "0.1.0",
+  "description": "RxJs pipeable operators for object stream",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -R ./dist & tsc -p .",
+    "build:commit": "npm run build && git add ./dist",
+    "start": "node dist/index.js",
+    "start:dev": "npm run build && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": [
+    "build:commit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justerest/rxjs-set-operators.git"
+  },
+  "keywords": [
+    "rxjs",
+    "pipe",
+    "operator",
+    "object",
+    "set"
+  ],
+  "author": "Sergey Klevakin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justerest/rxjs-set-operators/issues"
+  },
+  "homepage": "https://github.com/justerest/rxjs-set-operators#readme",
+  "dependencies": {
+    "rxjs": "^6.3.3"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
