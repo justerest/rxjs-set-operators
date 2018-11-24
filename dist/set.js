@@ -13,9 +13,9 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var operators_1 = require("rxjs/operators");
 function set(key, project) {
-    return operators_1.map(function (value) {
+    return operators_1.map(function (value, index) {
         var _a;
-        return (__assign({}, value, (_a = {}, _a[key] = project(value), _a)));
+        return (__assign({}, value, (_a = {}, _a[key] = project(value, index), _a)));
     });
 }
 exports.set = set;

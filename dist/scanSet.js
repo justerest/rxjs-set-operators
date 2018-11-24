@@ -14,9 +14,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var operators_1 = require("rxjs/operators");
 function scanSet(key, accumulator, seed) {
     var _a;
-    return operators_1.scan(function (acc, value) {
+    return operators_1.scan(function (acc, value, index) {
         var _a;
-        return (__assign({}, value, (_a = {}, _a[key] = accumulator(acc[key], value), _a)));
+        return (__assign({}, value, (_a = {}, _a[key] = accumulator(acc[key], value, index), _a)));
     }, (_a = {}, _a[key] = seed, _a));
 }
 exports.scanSet = scanSet;
