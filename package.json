@@ -9,10 +9,11 @@
     "build:commit": "npm run build && git add ./dist",
     "start": "node dist/index.js",
     "start:dev": "npm run build && npm start",
-    "test": "jest --coverage && npm run dtslint",
+    "test": "npm run dtslint && jest --coverage",
     "dtslint": "dtslint test"
   },
   "pre-commit": [
+    "test",
     "build:commit"
   ],
   "repository": {
