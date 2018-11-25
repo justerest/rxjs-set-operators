@@ -1,5 +1,8 @@
 # rxjs-set-operators
 
+[![npm version](https://badge.fury.io/js/rxjs-set-operators.svg)](http://badge.fury.io/js/rxjs-set-operators)
+[![GitHub stars](https://img.shields.io/github/stars/justerest/rxjs-set-operators.svg)](https://github.com/justerest/rxjs-set-operators)
+
 RxJS pipeable operators for object stream.
 
 ## Motivation
