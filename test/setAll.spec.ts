@@ -23,5 +23,5 @@ test('double', (complete) => {
             setAll('bar'),
             tap(() => void 0), // $ExpectType MonoTypeOperatorFunction<{ bar: { foo: string | number; }; }>
         )
-        .subscribe((value) => expect(value).toHaveProperty('bar'), void 0, complete);
+        .subscribe((value) => expect(value.bar).toHaveProperty('foo'), void 0, complete);
 });
