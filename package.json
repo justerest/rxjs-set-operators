@@ -1,6 +1,6 @@
 {
   "name": "rxjs-set-operators",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "RxJS pipeable operators for object stream",
   "private": false,
   "main": "dist/index.js",
