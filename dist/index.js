@@ -1,13 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var mergeSet_1 = require("./mergeSet");
-exports.mergeSet = mergeSet_1.mergeSet;
-var mergeTap_1 = require("./mergeTap");
-exports.mergeTap = mergeTap_1.mergeTap;
-var scanSet_1 = require("./scanSet");
-exports.scanSet = scanSet_1.scanSet;
+var merge_set_1 = require("./merge-set");
+exports.mergeSet = merge_set_1.mergeSet;
+var merge_tap_1 = require("./merge-tap");
+exports.mergeTap = merge_tap_1.mergeTap;
+var scan_set_1 = require("./scan-set");
+exports.scanSet = scan_set_1.scanSet;
 var set_1 = require("./set");
 exports.set = set_1.set;
-var setAll_1 = require("./setAll");
-exports.setAll = setAll_1.setAll;
+var set_all_1 = require("./set-all");
+exports.setAll = set_all_1.setAll;
+var switch_set_1 = require("./switch-set");
+exports.switchSet = switch_set_1.switchSet;
 //# sourceMappingURL=index.js.map

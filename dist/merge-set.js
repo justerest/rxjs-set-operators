@@ -20,4 +20,4 @@ function mergeSet(key, project) {
     })); });
 }
 exports.mergeSet = mergeSet;
-//# sourceMappingURL=mergeSet.js.map
+//# sourceMappingURL=merge-set.js.map

@@ -6,4 +6,4 @@ function mergeTap(project) {
     return operators_1.mergeMap(function (outerValue, index) { return rxjs_1.from(project(outerValue, index)).pipe(operators_1.mapTo(outerValue)); });
 }
 exports.mergeTap = mergeTap;
-//# sourceMappingURL=mergeTap.js.map
+//# sourceMappingURL=merge-tap.js.map

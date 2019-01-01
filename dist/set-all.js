@@ -8,4 +8,4 @@ function setAll(key) {
     });
 }
 exports.setAll = setAll;
-//# sourceMappingURL=setAll.js.map
+//# sourceMappingURL=set-all.js.map

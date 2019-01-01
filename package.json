@@ -13,7 +13,6 @@
     "dtslint": "dtslint test"
   },
   "pre-commit": [
-    "test",
     "build:commit"
   ],
   "repository": {
@@ -37,12 +36,12 @@
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.9",
-    "dtslint": "^0.3.0",
+    "@types/jest": "^23.3.11",
+    "dtslint": "^0.4.2",
     "jest": "^23.6.0",
     "pre-commit": "^1.2.2",
     "ts-jest": "^23.10.5",
-    "tslint": "^5.11.0",
-    "typescript": "^3.1.6"
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
   }
 }

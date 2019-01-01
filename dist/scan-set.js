@@ -20,4 +20,4 @@ function scanSet(key, accumulator, seed) {
     }, (_a = {}, _a[key] = seed, _a));
 }
 exports.scanSet = scanSet;
-//# sourceMappingURL=scanSet.js.map
+//# sourceMappingURL=scan-set.js.map
