@@ -3,4 +3,4 @@ export { mergeTap } from './merge-tap';
 export { scanSet } from './scan-set';
 export { set } from './set';
 export { setAll } from './set-all';
-export { setAll } from './setAll';
+export { switchSet } from './switch-set';
